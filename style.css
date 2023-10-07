@@ -7,11 +7,11 @@
     margin-top: -1.5px;
     margin-left: -1.5px;
     margin-right: -16px;
-    height: 98vh;
+    height: 97.7vh;
     width: 100%;
 }
 .box1{
-    display: block;
+    display: inline-block;
     background-color: #2c2349;
     background-position: center;
     background-position: cover;
@@ -21,6 +21,7 @@
     height: 98vh;
     width: 70%;
     box-sizing: border-box;
+    margin-top: -181px;
 }
 .header{
     display: block;
@@ -37,14 +38,22 @@
     display: block;
     border-radius: 20px;
     border: 2px solid #289b28;
-    margin-left: 80px;
+    margin-left: 30px;
 }
 .logo_name{
-    display: block;
+    display: flex;
     font-weight: bolder;
-    width: max-content;
+    width: 700px;
+    vertical-align: middle;
+    margin-top: -74px;
+    margin-left: 130px;
+    color: rgb(66, 12, 12);
 }
 audio,input{
     margin-top: 100px;
     display: block;
+}
+.queue{
+    display: inline-block;
+    padding: 40px;
 }
