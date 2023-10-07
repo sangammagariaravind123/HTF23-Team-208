@@ -28,3 +28,11 @@
     right: 0px;
     bottom: 0px;
 }
+.header{
+    height: 80px;
+    background-color: #af5f8b;
+    border-radius: 30px;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+}
