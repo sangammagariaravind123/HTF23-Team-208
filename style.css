@@ -7,7 +7,7 @@
     margin-top: -1.5px;
     margin-left: -1.5px;
     margin-right: -16px;
-    height: 97vh;
+    height: 96vh;
     width: 100%;
 }
 .box1{
@@ -18,10 +18,10 @@
     border-radius: 35px;
     margin-left: 388px;
     border: 10px solid #7e6052;
-    height: 98vh;
+    height: 95vh;
     width: 70%;
     box-sizing: border-box;
-    margin-top: -181px;
+    margin-top: -76px;
 }
 .header{
     display: block;
