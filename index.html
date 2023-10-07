@@ -9,7 +9,19 @@
 <link rel="stylesheet" href="style1.css">
 <body>
     <div class="box0">
-        <div class="queue">
+        <div id="queue">
+            <script>
+                function displayQueue() {
+                    const queueElement = document.getElementById('queue');
+                    queueElement.innerHTML = '';
+                    for (let i = 0; i < queue.length; i++) {
+                        const song = queue[i];
+                        const listItem = document.createElement('div');
+                        listItem.textContent = Song ${i + 1}: ${song.name};
+                        queueElement.appendChild(listItem);
+    }
+}
+            </script>
             <h2>Queue</h2>
                 <ol>
                     <li></li>
