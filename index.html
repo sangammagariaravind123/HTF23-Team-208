@@ -7,25 +7,27 @@
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
-    <div class="box">
-        <p>Yo this is it</p>
-        <h1>Local Audio Player</h1>
-        <input type="file" id="audioFile" accept="audio/*">
-        <audio id="audioPlayer" controls>Your browser does not support the audio element.</audio>
-        <script>
-        const audioFileInput = document.getElementById('audioFile');
-        const audioPlayer = document.getElementById('audioPlayer');
-        audioFileInput.addEventListener('change', function() {
-            const file = this.files[0];
-            if (file) {
-                const objectURL = URL.createObjectURL(file);
-                audioPlayer.src = objectURL;
-                audioPlayer.play();
-            } else {
-                audioPlayer.src = '';
-            }
-        });
-        </script>
+    <div class="box0">
+        <div class="box1">
+            <p>Yo this is it</p>
+            <h1>Local Audio Player</h1>
+            <input type="file" id="audioFile" accept="audio/*">
+            <audio id="audioPlayer" controls>Your browser does not support the audio element.</audio>
+            <script>
+            const audioFileInput = document.getElementById('audioFile');
+            const audioPlayer = document.getElementById('audioPlayer');
+            audioFileInput.addEventListener('change', function() {
+                const file = this.files[0];
+                if (file) {
+                    const objectURL = URL.createObjectURL(file);
+                    audioPlayer.src = objectURL;
+                    audioPlayer.play();
+                } else {
+                    audioPlayer.src = '';
+                }
+            });
+            </script>
+        </div>
     </div>
 </body>
 </html>
