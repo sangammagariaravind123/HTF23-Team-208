@@ -37,12 +37,16 @@
     display: block;
     border-radius: 20px;
     border: 2px solid #289b28;
-    margin-left: 80px;
+    margin-left: 30px;
 }
 .logo_name{
-    display: block;
+    display: flex;
     font-weight: bolder;
-    width: max-content;
+    width: 700px;
+    vertical-align: middle;
+    margin-top: -74px;
+    margin-left: 130px;
+    color: purple;
 }
 audio,input{
     margin-top: 100px;
