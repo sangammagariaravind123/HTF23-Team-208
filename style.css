@@ -1,7 +1,13 @@
 .box{
-    background-image: url('Zoro.png');
+    display: block;
+    background-color: #b67353;
     background-position: center;
     background-position: cover;
+    border-radius: 40px;
     height: 100vh;
     width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
 }
