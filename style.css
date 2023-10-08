@@ -1,3 +1,8 @@
+.grid{
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
 .box0{
     display: block;
     background-color: #7e6052;
@@ -9,6 +14,7 @@
     margin-right: -16px;
     height: 96vh;
     width: 100%;
+    grid-column: 1 10;
 }
 .box1{
     display: inline-block;
@@ -58,12 +64,12 @@ audio,input{
     padding: 40px;
 }
 .player{
-    display: block;
     width: 100%;
     border: 3px solid white;
     margin-bottom: 15px;
     bottom: 15px;
     height: 80px;
+    vertical-align: baseline;
 }
 #playButton,#play{
     display: block;
