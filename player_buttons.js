@@ -63,6 +63,19 @@ const audio = document.getElementById('audio');
                 displayQueue();
             }
         }
+        function playPreviousSong() {
+            if (currentSongIndex < queue.length - 1) {
+                currentSongIndex--;
+                audio.src = URL.createObjectURL(queue[currentSongIndex]);
+                audio.play();
+                displayQueue();
+            } else {
+                // End of the queue, stop playback
+                audio.src = '';
+                currentSongIndex = -1;
+                displayQueue();
+            }
+        }
 
         function clearQueue() {
             queue.length = 0;

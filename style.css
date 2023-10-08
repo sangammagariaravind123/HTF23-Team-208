@@ -60,14 +60,16 @@ audio,input{
 .player{
     display: block;
     width: 100%;
-    border: 10px solid white;
+    border: 3px solid white;
     margin-bottom: 15px;
     bottom: 15px;
+    height: 80px;
 }
 #playButton,#play{
-    display: block;
+    display: inline;
     border:0px solid transparent;
     border-radius: 25px;
     width: 50px;
     height: 50px;
+    vertical-align: middle;
 }
