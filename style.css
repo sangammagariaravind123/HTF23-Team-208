@@ -53,6 +53,15 @@ nav ul li{
     font-size: 45px;
     vertical-align: middle;
 }
+.container{
+    min-height: 61.5vh;
+}
+.bottom{
+    background-color: purple;
+    height: 130px;
+    border-radius: 25px;
+    bottom: 0;
+}
 audio,input{
     margin-top: 100px;
     display: block;
