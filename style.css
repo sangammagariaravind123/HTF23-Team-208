@@ -55,12 +55,18 @@ nav ul li{
 }
 .container{
     min-height: 61.5vh;
+    display: flex;
+    margin: 23px auto;
 }
 .bottom{
     background-color: purple;
     height: 130px;
     border-radius: 25px;
     bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 audio,input{
     margin-top: 100px;
@@ -69,6 +75,10 @@ audio,input{
 .queue{
     display: inline-block;
     padding: 40px;
+}
+#progress{
+    text-align: center;
+    width: 80vw;
 }
 .player{
     width: 100%;
