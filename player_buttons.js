@@ -1,26 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Music Queue</title>
-</head>
-<body>
-    <h1>Music Queue</h1>
-    <div id="queue">
-        <!-- Display the queue here -->
-    </div>
-    <audio id="audio" controls>
-        <source src="" type="audio/mp3">
-    </audio>
-    <button id="playButton">Play</button>
-    <button id="pauseButton">Pause</button>
-    <button id="nextButton">Next</button>
-    <button id="clearQueueButton">Clear Queue</button>
-    <br>
-    <input type="file" accept="audio/*" id="fileInput">
-    <button id="addSongButton">Add Song</button>
-
-    <script>
-        const audio = document.getElementById('audio');
+const audio = document.getElementById('audio');
         const playButton = document.getElementById('playButton');
         const pauseButton = document.getElementById('pauseButton');
         const nextButton = document.getElementById('nextButton');
@@ -103,6 +81,3 @@
                 queueElement.appendChild(listItem);
             }
         }
-    </script>
-</body>
-</html>
