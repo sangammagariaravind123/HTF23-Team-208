@@ -73,6 +73,7 @@ nav ul li{
     flex-direction: row;
 }
 .bottom{
+    position: sticky; 
     background-color: purple;
     height: 130px;
     border-radius: 25px;
