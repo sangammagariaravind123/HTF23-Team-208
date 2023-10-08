@@ -58,6 +58,20 @@ nav ul li{
     display: flex;
     margin: 23px auto;
 }
+.container{
+    margin-top: 74px;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
 .bottom{
     background-color: purple;
     height: 130px;
