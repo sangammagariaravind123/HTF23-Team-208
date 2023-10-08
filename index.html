@@ -17,8 +17,8 @@
             </ul>
         </nav>
         <div class="container">
-            <div src="1.jpg" class="songItem">
-                <img alt="1">
+            <div class="songItem">
+                <img src="1.jpg" alt="1">
                 <span class="songName">kuley_kuley</span>
                 <span class="songlistplay"><span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
             </div>
@@ -38,15 +38,22 @@
                 <span class="songlistplay"><span class="timestamp">05:34 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
             </div>
         </div>
+        <audio id="audio" controls>
+            <source src="" type="audio/mp3">
+        </audio>
         <div class="bottom">
             <input type="range" name="range" id="progress" min="0" max="100">
             <div class="icons">
+                <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-solid fa-arrow-left" id="previous"></i>
                 <i class="fa-solid fa-play" id="masterPlay"></i>
                 <i class="fa-solid fa-arrow-right" id="next"></i> 
+                <i class="fa-solid fa-repeat"></i>
+                <button id="addSongButton">Add Song</button>
             </div>
         </div>
      </div>
      <script src="https://kit.fontawesome.com/193477cb85.js" crossorigin="anonymous"></script>
+     <script src="C:\Users\sanga\OneDrive\Desktop\HTF23-Team-208\covers"></script>
 </body>
 </html>
