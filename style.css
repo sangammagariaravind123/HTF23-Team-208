@@ -9,25 +9,20 @@
     background-position: center;
     background-position: cover;
     border-radius: 25px;
-    margin-top: -1.5px;
-    margin-left: -1.5px;
-    margin-right: -16px;
     height: 96vh;
     width: 100%;
     grid-column: 1 10;
 }
 .box1{
-    display: inline-block;
+    display: block;
     background-color: #2c2349;
     background-position: center;
     background-position: cover;
     border-radius: 35px;
-    margin-left: 388px;
     border: 10px solid #7e6052;
-    height: 95vh;
-    width: 70%;
-    box-sizing: border-box;
-    margin-top: -76px;
+    flex: row wrap;
+    z-index: 2;
+    grid-column-start: 2
 }
 .header{
     display: block;
@@ -41,7 +36,7 @@
 .logo1,.logo{
     height: 70px;
     width: 70px;
-    display: block;
+    display: inline-block;
     border-radius: 20px;
     border: 2px solid #289b28;
     margin-left: 30px;
