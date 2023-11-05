@@ -1,0 +1,298 @@
+1. class StringBufferDemo5
+	{  
+public static void main(String args[])
+	{  
+	StringBuffer sb=new StringBuffer();  
+	System.out.println(sb.capacity());					//default 16  
+	sb.append("Hello");  
+	System.out.println(sb.capacity());					//now 16  
+	sb.append("java is my favourite language");  
+	System.out.println(sb.capacity());//now (16*2)+2=34 i.e (oldcapacity*2)+2  
+}  
+}  
+
+
+2. public class StringExample{    
+    public static void main(String args[]){    
+    StringBuffer sb1=new StringBuffer("CBIT");
+   StringBuffer sb2=new StringBuffer("CBIT");
+   System.out.println(sb1==sb2);
+  System.out.println(sb1.equals(sb2));
+  
+       }
+}    
+
+
+3.public class strmethods 
+	{
+	public static void main(String[] args) 
+		{
+		String targetString = "Java is fun to learn";     // SCP      //1
+		String s1= "JAVA";
+		String s2= "Java";
+		String s3 = "  Hello Java  ";
+		
+	System.out.println("Char at index 2(third position): " + targetString.charAt(2));    //V
+	System.out.println("After Concat: "+ targetString.concat("-Enjoy-"));       //Java is fun to learn-Enjoy-
+	System.out.println("Checking equals ignoring case: " +s2.equalsIgnoreCase(s1)); //True
+	System.out.println("Checking equals with case: " +s2.equals(s1));            //False
+	System.out.println("Checking Length: "+ targetString.length());           //20
+	System.out.println("Replace function: "+ targetString.replace("fun", "easy"));//Java is easy to learn
+	System.out.println("SubString of targetString: "+ targetString.substring(8));  //fun to learn
+	System.out.println("SubString of targetString: "+ targetString.substring(8, 12));//fun 
+	System.out.println("Converting to lower case: "+ targetString.toLowerCase());
+	System.out.println("Converting to upper case: "+ targetString.toUpperCase());
+	System.out.println("Triming string: " + s3.trim());
+	System.out.println("searching s1 in targetString: " + targetString.contains(s1));  //False
+	System.out.println("searching s2 in targetString: " + targetString.contains(s2)); //True
+	char [] charArray = s2.toCharArray();
+	System.out.println("Size of char array: " + charArray.length);     //4
+	System.out.println("Printing last element of array: " + charArray[3]);  //a
+
+	}
+
+}
+
+
+4./* A Java program to illustrate working of StringTokenizer 
+class:*/
+import java.util.*; 
+public class StrTokenizer 
+{ 
+	public static void main(String args[]) 
+	{ 
+		System.out.println("Using Constructor 1 - "); 
+		StringTokenizer st1 = new StringTokenizer("Hello CBIT How are you"); 
+				while (st1.hasMoreTokens()) 
+				System.out.println(st1.nextToken()); 
+
+		System.out.println("Using Constructor 2 - "); 
+		StringTokenizer st2 = new StringTokenizer("Welcome : TO : CBIT", " :"); 
+			while (st2.hasMoreTokens()) 
+			System.out.println(st2.nextToken()); 
+
+		System.out.println("Using Constructor 3 - "); 
+		StringTokenizer st3 = new StringTokenizer("Welcome : TO : CBIT", " :", true); 
+			while (st3.hasMoreTokens()) 
+			System.out.println(st3.nextToken()); 
+	} 
+} 
+
+
+
+5. // A simple example of inheritance.
+// Create a superclass.
+class A
+{
+	int i, j;
+	void showij() 
+		{
+		System.out.println("i and j: " + i + " " + j);
+		}
+}
+// Create a subclass by extending class A.
+class B extends A
+{
+	int k;
+	void showk()
+		{
+		System.out.println("k: " + k);
+		}
+	void sum() 
+	{
+	System.out.println("i+j+k: " + (i+j+k));
+	}
+}
+class SimpleInheritance
+	{
+public static void main(String args[]) 
+	{
+	A superOb = new A();
+	B subOb = new B();
+// The superclass may be used by itself.
+	superOb.i = 10;
+	superOb.j = 20;
+	System.out.println("Contents of superOb: ");
+	superOb.showij();
+	System.out.println();
+/* The subclass has access to all public members of its superclass. */
+	subOb.i = 7;
+	subOb.j = 8;
+	subOb.k = 9;
+	System.out.println("Contents of subOb: ");
+	subOb.showij();
+	subOb.showk();
+	System.out.println();
+	System.out.println("Sum of i, j and k in subOb:");
+	subOb.sum();
+	}
+}
+
+6./* Here, Box defines three constructors to initialize the dimensions of a box various ways.
+*/
+class Box 
+{
+	double width;      //Data Members
+	double height;
+	double depth;
+// constructor used when all dimensions specified
+	Box(double w, double h, double d)					//param constructor
+		{
+		width = w;//10
+		height = h;//15
+		depth = d;//20
+		}
+// constructor used when no dimensions specified
+	Box()																	//Default Constructor
+		{
+		width = -1; // use -1 to indicate
+		height = -1; // an uninitialized
+		depth = -1; // box
+		}
+// constructor used when cube is created
+	Box(double len)												//Parameterized
+	{
+	width = height = depth = len;
+	}
+// compute and return volume
+	double volume()                               //Method
+	{
+	return width * height * depth;
+	}
+}
+class OverloadCons                                //Main Class Name
+	{
+	public static void main(String args[]) 
+		{
+// create boxes using the various constructors
+		Box mybox1 = new Box(10, 20, 15);
+		Box mybox2 = new Box();
+		Box mycube = new Box(7);
+		double vol;
+// get volume of first box
+		vol = mybox1.volume();       //To Invoke Method
+		System.out.println("Volume of mybox1 is " + vol);  //3K
+// get volume of second box
+		vol = mybox2.volume();
+		System.out.println("Volume of mybox2 is " + vol);  //-1
+// get volume of cube
+		vol = mycube.volume();
+		System.out.println("Volume of mycube is " + vol); //49*7
+	}
+}
+
+
+7. // Demonstrate method overloading.
+class OverloadDemo 
+	{
+	void test() 
+		{
+		System.out.println("No parameters");
+		}
+	// Overload test for one integer parameter.
+	void test(float a) 
+		{
+		System.out.println("a: " + a);
+		}
+		// Overload test for two integer parameters.
+		void test(int a, int b) 
+		{
+		System.out.println("a and b: " + a + " " + b);
+		}
+		// overload test for a double parameter
+		double test(double a)
+			{
+			System.out.println("double a: " + a);
+			return a*a;
+			}
+}
+class Overload 
+	{
+	public static void main(String args[]) 
+		{
+		OverloadDemo ob = new OverloadDemo();
+		 // call all versions of test()
+		ob.test();
+		ob.test(10);
+		ob.test(10, 20);
+		double result = ob.test(123.25);
+		System.out.println("Result of ob.test(123.25): " + result);
+		}
+	}
+
+8.PROGRAM TO ILLUSTRATE THE STATIC KEYWORD USAGE
+
+class Lamp 
+{
+     static boolean isOn;
+
+    static void turnOn()     //Method
+		{
+        isOn = true;
+        System.out.println("Light on: " + isOn);
+         }
+
+    static void turnOff()
+		{
+        isOn = false;
+        System.out.println("Light on: " + isOn);
+        }
+}
+class Main1 
+	{
+    public static void main(String[] args) 
+		{
+        Lamp.turnOn();
+		Lamp.turnOff();
+	    System.out.println(Lamp.isOn);
+		
+		
+       }
+}
+9. JAVA PROGRAM TO ILLUSTRATE SINGLE INHERITANCE
+class Faculty 
+	{
+	 String collegeName = "CBIT(Autonomous)";
+	 String designation = "Asst.Prof";
+	 void does()
+	   {
+		System.out.println("Teaching");
+		 }
+	}
+
+public class JavaFaculty extends Faculty
+{
+	String mainSubject = "Java Programming";
+	 public static void main(String args[])
+	{
+	JavaFaculty obj = new JavaFaculty();
+	System.out.println(obj.collegeName);
+	System.out.println(obj.designation);
+	System.out.println(obj.mainSubject);
+	obj.does();
+   }
+}
+
+10.PROGRAM TO ILLUSTRATE FINAL KEYWORD
+
+final class CBIT
+{  
+   final void demo()
+	{
+      System.out.println("Welcome to CBIT");
+   }  
+}  
+	     
+class ECE extends CBIT
+	{  
+   void demo()
+   {
+      System.out.println("Welcome to Dept of ECE");
+   }  
+	     
+   public static void main(String args[])
+	{  
+      ECE obj= new ECE();  
+      obj.demo();  
+   }  
+}
